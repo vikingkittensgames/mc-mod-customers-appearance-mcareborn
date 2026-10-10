@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "${mod_id}",
+  "version": "${mod_version}",
+  "name": "${mod_name}",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.vikingkittens.mc.customersaddon.appearance.mcareborn.fabric.McaRebornAppearanceFabric"],
+    "client": ["com.vikingkittens.mc.customersaddon.appearance.mcareborn.fabric.McaRebornAppearanceFabricClient"]
+  },
+  "depends": {
+    "architectury": ">=${architectury_version}",
+    "fabric-api": ">=${fabric_api_version}",
+    "fabricloader": ">=${fabric_loader_version}",
+    "minecraft": "${minecraft_version}",
+    "java": ">=21",
+    "customers": "${customers_fabric_version_range}",
+    "mca": "${mca_fabric_version_range}"
+  }
+}
