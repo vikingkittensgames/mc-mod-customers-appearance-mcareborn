@@ -142,11 +142,19 @@ dependencies {
 }
 
 tasks.named('processResources', ProcessResources) {
-    inputs.properties([architectury_version: architectury_version, customers_fabric_version_range: customers_fabric_version_range,
-                       fabric_api_version: fabric_api_version, fabric_loader_version: fabric_loader_version,
-                       minecraft_version: minecraft_version, mca_fabric_version_range: mca_fabric_version_range,
-                       mod_id: mod_id, mod_name: mod_name, mod_version: mod_version])
-    filesMatching('fabric.mod.json') { expand(inputs.properties) }
+    def resourceProperties = [
+            architectury_version           : architectury_version,
+            customers_fabric_version_range : customers_fabric_version_range,
+            fabric_api_version             : fabric_api_version,
+            fabric_loader_version          : fabric_loader_version,
+            minecraft_version              : minecraft_version,
+            mca_fabric_version_range       : mca_fabric_version_range,
+            mod_id                         : mod_id,
+            mod_name                       : mod_name,
+            mod_version                    : mod_version
+    ]
+    inputs.properties(resourceProperties)
+    filesMatching('fabric.mod.json') { expand(resourceProperties) }
 }
 
 tasks.named('shadowJar', Jar) {
