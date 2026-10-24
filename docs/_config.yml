@@ -1,0 +1,12 @@
+title: Customers MCA Reborn Appearance
+description: Documentation for the Customers MCA Reborn Appearance add-on
+remote_theme: julianolf/jekyll-theme-8bit
+
+plugins:
+  - jekyll-remote-theme
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
