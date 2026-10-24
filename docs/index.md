@@ -12,16 +12,6 @@ sitting behavior.
 
 [Learn more about Minecraft Comes Alive Reborn](https://www.curseforge.com/minecraft/mc-mods/minecraft-comes-alive-reborn).
 
-## Requirements
-
-- Minecraft 1.21.1
-- Fabric Loader 0.18.6 with Fabric API 0.105.0+, or NeoForge 21.1.230+
-- Customers 2.1.0 or newer
-- Architectury API 13.0.8 or newer in the 13.0 line
-- MCA Reborn 7.7.9 or newer
-
-Install all requirements on both the server and client.
-
 ## Use the appearance
 
 Enable Minecraft Comes Alive in a Customer or Supplier Spawner's appearance
